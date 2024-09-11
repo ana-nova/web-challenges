@@ -1,0 +1,60 @@
+/* Please scroll down to the start of your exercise! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+section {
+  background-color: lemonchiffon;
+  display: grid;
+  place-items: center;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+button {
+  background-color: white;
+  padding: 8px 25px;
+}
+
+/* Your exercise starts here */
+
+/* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
+
+.button1 {
+  width: auto;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.button2 {
+  color: rgb(127, 127, 255);
+  background-color: rgb(243, 227, 121);
+  border-color: magenta;
+}
+
+.button3 {
+  color: rgb(215, 10, 10);
+  text-shadow: black;
+  border-style: hidden;
+}
+
+.button4 {
+  text-shadow: orange;
+  color: aliceblue;
+
+}
+
+button:hover {
+  color: rgb(85, 255, 0);
+}
+
+/* Feel free to play around with other properties, as well. */
