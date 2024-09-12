@@ -19,7 +19,7 @@ In this exercise you train to write if / else and ternary statements in various 
 ### Part 3: Hotdogs
 
 - for a given `numberOfHotdogs` a person buys, log the respective price that the person has to pay:
-- for less than 5 hotdogs: 2 euro per hotdog
+- for less than 5 hotdogs: o2 eur per hotdog
 - for at least 5 but less than 100 hotdogs: 1.50 euro per hotdog
 - for at least 100 but less than 1 000 000 hotdogs: 1 euro per hotdog
 - for at least 1 000 000 hotdogs: 0.10 euro per hotdog

@@ -24,20 +24,15 @@ if (number % 2 === 0) {
 //   console.log("PART 2: " + partTwo);
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 1234;
-let pricePerHotdog;
+const numberOfHotdogs = 1;
 
 if (numberOfHotdogs < 5) {
-  pricePerHotdog = 2; 
   console.log("PART 3: 2 euro for hotdog");
 } else if (numberOfHotdogs >= 5 && numberOfHotdogs < 100) {
-  pricePerHotdog = 1.50; 
   console.log("PART 3: 1.50 euro for hotdog");
 } else if (numberOfHotdogs >= 100 && numberOfHotdogs < 1000000) {
-  pricePerHotdog = 1; 
   console.log("PART 3: 1 euro for hotdog");
 } else {
-  pricePerHotdog = 0.10; 
   console.log("PART 3: 10 cents for hotdog");
 }
 
