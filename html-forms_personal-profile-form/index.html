@@ -1,80 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Personal Profile Form</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <form action="">
-      <fieldset aria-label="general information">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" minlength="3" maxlength="10" />
-        <label
-          >Email:
-          <input type="email" name="display-email" />
-        </label>
-        <label>
-          Password:
-          <input type="password" />
-        </label>
-      </fieldset>
-      <label>
-        Birthday:
-        <input type="date" />
-      </label>
-      <label>
-        Age:
-        <input type="number" min="0" max="42" />
-      </label>
-      <input type="file" aria-label="certificate" />
-      <label>
-        Favorite Color:
-        <input type="color" />
-      </label>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Elements Example</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-      <label for="check-1"
-        >AGB:
-        <input type="checkbox" name="check-1" id="check-1" />
-      </label>
+<h1>Comprehensive HTML Form Example</h1>
 
-      <label for="check-2"
-        >multiple option2:
-        <input type="checkbox" name="check-2" id="check-2" />
-      </label>
+<!-- Form Element with various input types -->
+<form action="#" method="POST">
+  
+  <!-- Personal Information Section -->
+  <fieldset>
+    <legend>Personal Information</legend>
 
-      <fieldset>
-        <legend>Radio Group</legend>
-        <label
-          >option 1
-          <input type="radio" name="radio-group" />
-        </label>
-        <label
-          >option 2
-          <input type="radio" name="radio-group" />
-        </label>
-        <label
-          >option 3
-          <input type="radio" name="radio-group" />
-        </label>
-      </fieldset>
-      <label>
-        Language:
-        <select name="language" id="language">
-          <option value="eng">English</option>
-          <option value="ger">German</option>
-          <option value="spa">Spanish</option>
-        </select>
-      </label>
-      <label>
-        description:
-        <textarea name="description"></textarea>
-      </label>
-      <button type="submit">Submit form</button>
-    </form>
-  </body>
+    <!-- Text Input -->
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+    
+    <!-- Text Input -->
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+    <!-- Password Input -->
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter a password" required>
+
+    <!-- Email Input -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Phone Input -->
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+    <!-- URL Input -->
+    <label for="website">Personal Website</label>
+    <input type="url" id="website" name="website" placeholder="Enter your website URL">
+  </fieldset>
+
+  <!-- Survey Section -->
+  <fieldset>
+    <legend>Survey</legend>
+
+    <!-- Radio Buttons -->
+    <label>How did you hear about us?</label>
+    <input type="radio" id="radio-1" name="source" value="internet">
+    <label for="radio-1">Internet</label>
+    <input type="radio" id="radio-2" name="source" value="friend">
+    <label for="radio-2">Friend</label>
+    <input type="radio" id="radio-3" name="source" value="advertisement">
+    <label for="radio-3">Advertisement</label>
+
+    <!-- Checkbox -->
+    <label>Select your interests:</label>
+    <input type="checkbox" id="interest-1" name="interest" value="coding">
+    <label for="interest-1">Coding</label>
+    <input type="checkbox" id="interest-2" name="interest" value="sports">
+    <label for="interest-2">Sports</label>
+    <input type="checkbox" id="interest-3" name="interest" value="music">
+    <label for="interest-3">Music</label>
+
+    <!-- Dropdown Menu (Select) -->
+    <label for="country">Select your country</label>
+    <select id="country" name="country">
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="ca">Canada</option>
+      <option value="de">Germany</option>
+    </select>
+
+    <!-- Range Input -->
+    <label for="satisfaction">Rate your satisfaction (0-100)</label>
+    <input type="range" id="satisfaction" name="satisfaction" min="0" max="100" value="50">
+
+    <!-- Number Input -->
+    <label for="quantity">How many products did you buy?</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="100" value="1">
+
+    <!-- Date Input -->
+    <label for="birthdate">Your birth date</label>
+    <input type="date" id="birthdate" name="birthdate">
+
+    <!-- Color Picker -->
+    <label for="fav-color">Pick your favorite color</label>
+    <input type="color" id="fav-color" name="fav-color" value="#ff0000">
+
+    <!-- Search Input -->
+    <label for="search">Search something</label>
+    <input type="search" id="search" name="search" placeholder="Search...">
+  </fieldset>
+
+  <!-- Additional Information Section -->
+  <fieldset>
+    <legend>Additional Information</legend>
+
+    <!-- Textarea -->
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments" rows="5" placeholder="Leave a comment..."></textarea>
+
+    <!-- Terms of Service Checkbox -->
+    <label for="tos">
+      <input type="checkbox" id="tos" name="tos" required>
+      I agree to the terms of service
+    </label>
+  </fieldset>
+
+  <!-- Form Submission and Reset Buttons -->
+  <div class="form-buttons">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+
+</form>
+
+</body>
 </html>
