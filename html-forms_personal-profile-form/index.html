@@ -10,6 +10,71 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <form action="">
+      <fieldset aria-label="general information">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" minlength="3" maxlength="10" />
+        <label
+          >Email:
+          <input type="email" name="display-email" />
+        </label>
+        <label>
+          Password:
+          <input type="password" />
+        </label>
+      </fieldset>
+      <label>
+        Birthday:
+        <input type="date" />
+      </label>
+      <label>
+        Age:
+        <input type="number" min="0" max="42" />
+      </label>
+      <input type="file" aria-label="certificate" />
+      <label>
+        Favorite Color:
+        <input type="color" />
+      </label>
+
+      <label for="check-1"
+        >AGB:
+        <input type="checkbox" name="check-1" id="check-1" />
+      </label>
+
+      <label for="check-2"
+        >multiple option2:
+        <input type="checkbox" name="check-2" id="check-2" />
+      </label>
+
+      <fieldset>
+        <legend>Radio Group</legend>
+        <label
+          >option 1
+          <input type="radio" name="radio-group" />
+        </label>
+        <label
+          >option 2
+          <input type="radio" name="radio-group" />
+        </label>
+        <label
+          >option 3
+          <input type="radio" name="radio-group" />
+        </label>
+      </fieldset>
+      <label>
+        Language:
+        <select name="language" id="language">
+          <option value="eng">English</option>
+          <option value="ger">German</option>
+          <option value="spa">Spanish</option>
+        </select>
+      </label>
+      <label>
+        description:
+        <textarea name="description"></textarea>
+      </label>
+      <button type="submit">Submit form</button>
+    </form>
   </body>
 </html>
