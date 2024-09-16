@@ -42,9 +42,9 @@ const switchValueButton = document.querySelector(
 switchValueButton.addEventListener("click", () => {
   // Check if both input fields have values
   if (firstSwitchValueInput.value && secondSwitchValueInput.value) {
-    const tempValue = firstSwitchValueInput.value; // Temporäre Variable speichert den ursprünglichen Wert
-    firstSwitchValueInput.value = secondSwitchValueInput.value; // Erster Wert wird durch zweiten überschrieben
-    secondSwitchValueInput.value = tempValue; // Zweiter Wert erhält den ursprünglichen ersten Wert
+    const tempValue = firstSwitchValueInput.value;                // Temporäre Variable speichert den ursprünglichen Wert
+    firstSwitchValueInput.value = secondSwitchValueInput.value;   // Erster Wert wird durch zweiten überschrieben
+    secondSwitchValueInput.value = tempValue;                     // Zweiter Wert erhält den ursprünglichen ersten Wert
     
   } else {
     console.log("Both input fields must have a value to swap.");
