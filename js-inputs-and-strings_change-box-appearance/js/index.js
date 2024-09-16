@@ -30,6 +30,7 @@ const box = document.querySelector('[data-js="box"]');
 inputColor.addEventListener("input", () => {
   const hue = inputColor.value; // Get the slider's value
   box.style.backgroundColor = `hsl(${hue}, 100%, 50%)`; // Apply HSL color
+  console.log(hue);
 });
 
 inputRadius.addEventListener("input", () => {
@@ -41,3 +42,4 @@ inputRotation.addEventListener("input", () => {
   const rotation = inputRotation.value; // Get the slider's value
   box.style.transform = `rotate(${rotation}deg)`; // Rotate the box by degrees
 });
+
