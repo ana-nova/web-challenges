@@ -147,3 +147,21 @@
 - `js-objects-and-arrays/arrays`
 - `js-objects-and-arrays/objects`
 - `js-objects-and-arrays/objects-and-arrays`
+
+
+---
+### Day 2: Forms, Events, and DOM Manipulation
+- Learned how to prevent default form behavior using `.preventDefault()`
+- Listened to form submit events and accessed input values via `event.target.elements` and `FormData`
+- Understood the input event, focused input fields programmatically, and reset forms
+- Learned how to generate HTML with JavaScript using `.innerHTML` and DOM manipulation methods
+
+**Files:**
+- `js-forms/handle-form-submit`
+- `js-forms/checkbox-input`
+- `js-forms/calculator`
+- `js-createelement/toast-messages`
+- `js-createelement/social-media-post`
+- `js-createelement/product-teaser`
+
+---
