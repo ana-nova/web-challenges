@@ -11,10 +11,11 @@ addButton.addEventListener("click", () => {
   newToast.textContent = "This is a new toast message"; // Inhalt der Toast-Nachricht
 
   // Füge die neue Toast-Nachricht zum Container hinzu
-  toastContainer.appendChild(newToast);
+  toastContainer.append(newToast);
 });
 
 clearButton.addEventListener("click", () => {
   // Leere den Container für die Toast-Nachrichten
   toastContainer.innerHTML = "";
+  //oder: toastContainer.remove("li");
 });
