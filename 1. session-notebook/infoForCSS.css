@@ -1,0 +1,253 @@
+/* ========================
+   CSS Blueprint for Learning
+   ======================== */
+
+/* Allgemeines Styling und Box-Modell */
+* {
+    margin: 0; /* Setzt alle Außenabstände auf 0 */
+    padding: 0; /* Setzt alle Innenabstände auf 0 */
+    box-sizing: border-box; /* Bezieht Padding und Border in die Breite und Höhe eines Elements mit ein */
+  }
+  
+  /* ========================
+     Selektoren
+     ======================== */
+  
+  /* Klassen-Selektor: Verwendet ein Punkt (.) vor der Klasse, um Elemente mit einer bestimmten Klasse anzusprechen */
+  .container {
+    max-width: 1200px; /* Maximale Breite eines Containers */
+    margin: 0 auto; /* Zentriert den Container horizontal */
+    padding: 20px; /* Innenabstand */
+  }
+  
+  /* ID-Selektor: Verwendet das Hash-Symbol (#), um ein spezifisches Element anhand seiner ID zu identifizieren */
+  #main-header {
+    background-color: #18406a; /* Setzt die Hintergrundfarbe */
+    color: white; /* Textfarbe */
+    padding: 20px; /* Innenabstand */
+  }
+  
+  /* Element-Selektor: Spricht alle HTML-Elemente eines bestimmten Typs an, hier <h1> */
+  h1 {
+    font-size: 2rem; /* Schriftgröße */
+    color: #333; /* Textfarbe */
+  }
+  
+  /* ========================
+     Layout und Flexbox
+     ======================== */
+  
+  .flex-container {
+    display: flex; /* Aktiviert Flexbox für die Kinder-Elemente */
+    justify-content: space-between; /* Verteilung der Kinder-Elemente */
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 20px; /* Abstand zwischen Flex-Items */
+  }
+  
+  .flex-item {
+    flex: 1; /* Flex-Eigenschaft für flexible Breite */
+    padding: 10px; /* Innenabstand */
+  }
+  
+  /* ========================
+     Positioning
+     ======================== */
+  
+  /* Relative Positionierung: Bewegt das Element relativ zu seiner Standardposition */
+  .relative-box {
+    position: relative;
+    top: 10px; /* Verschiebt das Element 10px nach unten */
+    left: 20px; /* Verschiebt das Element 20px nach rechts */
+  }
+  
+  /* Absolute Positionierung: Bewegt das Element relativ zu seinem nächsten positionierten Vorfahren */
+  .absolute-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Fixed Positionierung: Das Element bleibt auch beim Scrollen an derselben Stelle */
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Breite über die gesamte Seite */
+    z-index: 1000; /* Über andere Elemente legen */
+  }
+  
+  /* ========================
+     Responsive Design
+     ======================== */
+  
+/* @media vs @media screen */
+
+/* @media: Wird verwendet, um Styles für verschiedene Medien zu definieren (z.B. Print, Screen). */
+@media (max-width: 768px) {  }
+  
+  /* @media screen: Spezifiziert, dass die Styles nur auf Bildschirme (Monitore, Smartphones, Tablets) angewendet werden */
+  @media screen and (max-width: 768px) {  }
+  
+  
+  /* ========================
+     Typografie
+     ======================== */
+  
+  body {
+    font-family: Arial, sans-serif; /* Setzt die Standardschriftart */
+    line-height: 1.5; /* Zeilenhöhe */
+    color: #333; /* Textfarbe */
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold; /* Fettgedruckte Überschriften */
+    margin-bottom: 10px; /* Abstand nach unten */
+  }
+  
+  p {
+    margin-bottom: 20px; /* Abstand unter jedem Absatz */
+  }
+  
+  /* ========================
+     Buttons und Interaktionen
+     ======================== */
+  
+  .button {
+    background-color: #ff1dbf; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe */
+    padding: 10px 20px; /* Innenabstand */
+    border: none; /* Entfernt den Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Ändert den Mauszeiger zu einer Hand */
+    font-size: 1rem; /* Schriftgröße */
+  }
+  
+  .button:hover {
+    background-color: #efa6da; /* Ändert die Hintergrundfarbe bei Hover */
+  }
+  
+  /* ========================
+     Formen und Schatten
+     ======================== */
+  
+  .card {
+    background-color: white; /* Kartenhintergrund */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schlagschatten um die Karte herum */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+  }
+  
+  /* ========================
+     Animationen und Übergänge
+     ======================== */
+  
+  .animated-box {
+    transition: transform 0.3s ease; /* Glatter Übergang bei Änderungen */
+  }
+  
+  .animated-box:hover {
+    transform: scale(1.05); /* Skaliert das Element beim Hover */
+  }
+  
+  /* ========================
+     Verschiedenes
+     ======================== */
+  
+  /* Hintergrundbild */
+  .background-image {
+    background-image: url('image.jpg'); /* Setzt ein Hintergrundbild */
+    background-size: cover; /* Bild über das gesamte Element strecken */
+    background-position: center; /* Bild zentrieren */
+  }
+  
+  /* ========================
+     Listen
+     ======================== */
+  
+  ul {
+    list-style-type: none; /* Entfernt Aufzählungszeichen */
+    padding: 0; /* Entfernt den Innenabstand */
+  }
+  
+  li {
+    padding: 10px 0; /* Abstand um jedes Listenelement */
+  }
+  
+  /* Padding mit zwei Werten */
+
+/* padding: 10px 20px bedeutet:
+   - 10px oben und unten (vertikal)
+   - 20px links und rechts (horizontal)
+*/
+
+
+.box {
+    padding: 10px 20px;
+  }
+  
+  /* .button:hover zeigt die Schreibweise von Pseudo-Klassen mit einem Doppelpunkt (:) */
+
+/* :hover wird verwendet, um einen Hover-Zustand für Elemente zu definieren */
+.button:hover {
+    background-color: #efa6da; /* Ändert die Hintergrundfarbe bei Hover */
+  }
+  
+  /* Andere häufige Pseudo-Klassen:
+     - :focus: Wird angewendet, wenn ein Element fokussiert ist (z.B. durch Tastatur oder Mausklick).
+     - :active: Wird beim Klicken auf ein Element angewendet (aktiver Zustand).
+     - :visited: Verändert das Styling eines Links, wenn er bereits besucht wurde.
+     - :nth-child(n): Wendet den Stil auf das n-te Kind eines Elements an.
+     - :first-child: Stilt das erste Kind eines Elements.
+  */
+
+  
+  /* :root wird verwendet, um globale CSS-Variablen für die gesamte Webseite zu definieren */
+:root {
+    --primary-color: #ff1dbf; /* Beispiel einer CSS-Variable */
+    --secondary-color: #18406a;
+  }
+  
+  /* Verwendung der CSS-Variablen: */
+  body {
+    color: var(--primary-color); /* Die Textfarbe wird auf die in :root definierte Farbe gesetzt */
+  }
+
+  
+  /* position: absolute vs position: relative */
+
+/* position: absolute positioniert ein Element relativ zum nächsten "positionierten" Elternelement. 
+   Ein Element ist "positioniert", wenn es position: relative, absolute oder fixed hat.
+   Falls kein Elternelement positioniert ist, wird das Element relativ zum Dokument positioniert.
+*/
+.parent {
+    position: relative; /* Stellt sicher, dass das Kind relativ zu diesem Container positioniert wird */
+  }
+  
+  .child {
+    position: absolute; /* Das Kind wird absolut innerhalb des .parent-Containers positioniert */
+    top: 20px; /* 20px vom oberen Rand des .parent-Containers entfernt */
+    left: 10px; /* 10px vom linken Rand des .parent-Containers entfernt */
+  }
+  
+  /* position: relative verschiebt ein Element relativ zu seiner normalen Position. 
+     Es behält seine Position im Dokumentfluss und verschiebt sich von dort aus.
+  */
+  .relative-box {
+    position: relative;
+    top: 10px; /* Das Element wird um 10px nach unten verschoben */
+    left: 20px; /* Das Element wird um 20px nach rechts verschoben */
+  }
+
+  
+  /* Flexbox Wrap */
+
+/* wrap: Die Flexbox-Kinder brechen auf die nächste Zeile, wenn sie den verfügbaren Platz überschreiten */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Die Kinder-Elemente umbrechen auf die nächste Zeile */
+    gap: 20px; /* Abstand zwischen den Elementen */
+  }
+  
+  .flex-item {
+    flex: 1 1 200px; /* Flex-Elemente haben eine Basisbreite von 200px, können aber flexibel sein */
+  }
+  
