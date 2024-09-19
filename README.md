@@ -150,6 +150,7 @@
 
 
 ---
+
 ### Day 2: Forms, Events, and DOM Manipulation
 - Learned how to prevent default form behavior using `.preventDefault()`
 - Listened to form submit events and accessed input values via `event.target.elements` and `FormData`
@@ -165,3 +166,15 @@
 - `js-createelement/product-teaser`
 
 ---
+
+### Day 3: Recap Project – Quiz App Enhancements
+- Implemented toggle functionality for interactive elements
+- Built a form to add new cards dynamically
+- Created new cards in the app using form input data
+- Added a text counter for form fields to track input length
+
+**Files:**
+- `own quiz-app repository`
+
+---
+
