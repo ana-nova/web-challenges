@@ -35,7 +35,7 @@
 
 ---
 
-### Day 4: Positioning and z-index
+### Day 4: Positioning and z-index & self-directed learning
 - Learned about different CSS positioning types
 - Applied `z-index` for element layering and stacking
 - Worked on absolute and relative positioning
@@ -100,7 +100,7 @@
 
 ---
 
-### Day 4: Responsive Design and Media Queries
+### Day 4: Responsive Design and Media Queries & self-directed learning
 - Understood the concept of responsive design and mobile-first approach
 - Learned responsive units (`%`, `em`, `rem`, `vw`, `vh`)
 - Worked with media queries to apply conditional styles
