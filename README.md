@@ -178,3 +178,16 @@
 
 ---
 
+### Day 4: Loops in JavaScript & self-directed learning
+- Learned the concept of loops for repetitive tasks (`for`, `while`, `for...in` and `for...of`)
+- Continued with self-directed learning
+
+**Files:**
+- `js-loops/for-console`
+- `js-loops/forof-list`
+- `js-loops/forin-select-nav`
+- `js-loops/while-random-number`
+- `js-loops/stars`
+- `quiz-app repository`
+
+---
