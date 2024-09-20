@@ -33,17 +33,16 @@ colors.forEach((color) => {
   colorBox.style.backgroundColor = color;
 
   // Füge die Box in den Container ein
-  container.appendChild(colorBox);
+  document.body.append(colorBox);
 });
 
 
-// Task 2
-// Definiere eine Funktion, um eine farbige Box zu rendern + unter Verwendung von anonymer Funktion
+// Task 2: Definiere eine Funktion, um eine farbige Box zu rendern + unter Verwendung von anonymer Funktion
 function renderColorBox(color) {
   const colorBox = document.createElement("div");
   colorBox.classList.add("color-box");
   colorBox.style.backgroundColor = color;
-  container.appendChild(colorBox);
+  document.body.append(colorBox);
 }
 
 // Verwende forEach mit der renderColorBox-Funktion
