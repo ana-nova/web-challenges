@@ -11,10 +11,6 @@ console.clear();
   
 //   // Rückgabe der Daten - 1. Teil
 //   //return data;
-
-//     // 2. Teil - different values + brauchen map um ein neues Array zu erstellen, um die Daten besser extrahieren zu können
-//     const names = data.results.map(character => character.name);
-//     return names;
 // }
 
 // // Aufrufen der Funktion und Ausgeben der Daten in der Konsole + then für die Erfüllung eines "Promises" (warten auf Daten um mit denen zu arbeiten)
@@ -23,7 +19,7 @@ console.clear();
 //   });
   
 
-  /* Wenn ich mehrere Daten gleichzeitig angezeigt haben will: */
+  /* 2. Teil - Wenn ich mehrere Daten gleichzeitig angezeigt haben will */
 
   const url = "https://swapi.py4e.com/api/people";
 
