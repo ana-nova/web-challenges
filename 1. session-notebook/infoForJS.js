@@ -51,3 +51,109 @@
   // Output: { title: "The Dark Knight", year: 2008, genre: "Action", rating: 9.0 }
   // Return value: The first movie object with a rating greater than 8.8
   
+
+  /* ========================
+         ERROR HANDLING
+   ======================== */
+
+// 1. Basic try...catch Usage
+// Erklärung: Verwende try...catch, um Fehler zu erkennen und abzufangen, die während der Ausführung auftreten.
+function basicErrorHandling() {
+  try {
+    // Code, der einen Fehler verursachen könnte
+    let result = 10 / 0; // Intentionaler Fehler: Division durch Null
+    console.log(result);
+  } catch (error) {
+    // Fehler abfangen und behandeln
+    console.error("Error:", error.message); // Ausgabe des Fehlers in der Konsole
+  }
+}
+
+basicErrorHandling(); // Funktion aufrufen, um das Error Handling zu demonstrieren
+
+// 2. Throwing Custom Errors
+// Erklärung: Manchmal möchtest du spezielle Fehler werfen, um bestimmte Probleme abzufangen. Dazu kannst du throw verwenden, um selbst definierte Fehler auszulösen.
+function divide(a, b) {
+  if (b === 0) {
+    // Eigener Fehler, wenn durch Null geteilt wird
+    throw new Error("Cannot divide by zero!");
+  }
+  return a / b;
+}
+
+function customErrorHandling() {
+  try {
+    const result = divide(4, 0); // Intentionaler Fehler
+    console.log(result);
+  } catch (error) {
+    console.error("Division Error:", error.message); // Fange den Fehler ab
+  }
+}
+
+customErrorHandling();
+
+// 3. Displaying Error Messages in the DOM
+// Erklärung: Fehler können direkt auf der Webseite angezeigt werden, indem sie in den DOM eingefügt werden.
+function displayError(message) {
+  const errorMessageElement = document.getElementById("error-message");
+  errorMessageElement.textContent = message;
+  errorMessageElement.style.color = "red"; // Optional: Fehlertext rot einfärben
+}
+
+// Beispiel für die Anzeige eines Fehlers im DOM
+try {
+  let data = JSON.parse("INVALID_JSON"); // Intentionaler JSON-Fehler
+} catch (error) {
+  displayError("Invalid JSON format: " + error.message); // Fehler im DOM anzeigen
+}
+
+// 4. Asynchronous Error Handling with async/await
+// Erklärung: Async-Funktionen benötigen ebenfalls Error Handling, um Netzwerk- oder andere asynchrone Fehler zu behandeln.
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      // Fehler werfen, wenn der HTTP-Status nicht OK ist
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Fetch error:", error.message); // Asynchrone Fehler abfangen
+    return null; // Null zurückgeben, wenn ein Fehler auftritt
+  }
+}
+
+async function useFetchData() {
+  const data = await fetchData("https://reqres.in/api/users/1");
+  if (data) {
+    console.log("User Data:", data); // Erfolgreich abgerufene Daten
+  } else {
+    displayError("Failed to fetch user data."); // Fehler beim Abrufen anzeigen
+  }
+}
+
+useFetchData();
+
+// 5. Handling Multiple Promises with Promise.all
+// Erklärung: Promise.all wird verwendet, um mehrere Promises gleichzeitig zu verarbeiten. Dabei wird ein einziger Fehler abgefangen, wenn eines der Promises fehlschlägt.
+async function fetchMultipleResources() {
+  const urls = [
+    "https://reqres.in/api/users/1",
+    "https://reqres.in/api/users/2",
+    "https://reqres.in/api/users/invalid"
+  ];
+
+  try {
+    const results = await Promise.all(urls.map((url) => fetch(url)));
+    const data = await Promise.all(results.map((res) => res.json()));
+    console.log("All data:", data); // Verarbeite alle abgerufenen Daten
+  } catch (error) {
+    console.error("One or more fetches failed:", error.message); // Einen oder mehrere Fehler abfangen
+  }
+}
+
+fetchMultipleResources();
+
+// HTML Setup for Error Display (include this in your HTML file)
+// <p id="error-message" class="error"></p>
