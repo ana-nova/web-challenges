@@ -191,3 +191,18 @@
 - `quiz-app repository`
 
 ---
+
+### Day 5: Advanced Array Methods and JavaScript Modules
+- Explored array iteration using `forEach`, `map`, `filter`, `find`
+- Worked with methods like `find`, `findIndex`, `some`, `every`, `reduce`, `toSorted`, and `toReversed`
+- Understood JavaScript modules and how to use `import` and `export` statements
+- Structured JavaScript projects for better modularity and organization
+
+**Files:**
+- `js-array-methods/for-each`
+- `js-array-methods/map`
+- `js-array-methods/filter`
+- `js-array-methods/zoo-animals`
+- `js-structure/shapes`
+- `js-structure/quiz-app`
+
