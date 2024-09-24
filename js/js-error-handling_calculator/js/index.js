@@ -2,6 +2,7 @@ console.clear();
 
 const form = document.querySelector("form");
 const output = form.querySelector("output");
+const errorOutput = document.querySelector(".error");
 
 const operations = {
   add: (a, b) => a + b,
@@ -12,10 +13,13 @@ const operations = {
       if (b === 0) {
         throw new Error("Cannot divide by zero!");
       }
+      errorOutput.innerHTML = "";
       return a / b;
+      
     } catch (error) {
-      console.error("Division error:", error.message);
-      output.innerText = "Division error: " + error.message;
+      console.error("division error:", error.message);
+   //   output.innerText = error.message;
+      errorOutput.innerText = "Du kannst nicht durch 0 teilen";
       throw error;
     }
   },

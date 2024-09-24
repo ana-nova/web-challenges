@@ -206,3 +206,19 @@
 - `js-structure/shapes`
 - `js-structure/quiz-app`
 
+---
+
+# Week 3 Summary
+
+### Day 1: Asynchronous Code, Promises, and Error Handling
+- Learned how asynchronous code works and how to manage it with Promises and async/await
+- Explored the fetch API, handling JSON responses and HTTP response codes
+- Understood the try...catch construct and learned how to throw custom errors 
+
+**Files:**
+- `js-fetch/star-wars-console`
+- `js-fetch/star-wars`
+- `js-error-handling/calculator`
+- `js-error-handling/fetch`
+
+---

@@ -6,13 +6,14 @@ const errorElement = document.querySelector("[data-js='error']");
 
 async function fetchUserData(url) {
   try {
+    // Fetch data
     const response = await fetch(url);
-
+    // Convert the response to JSON 
     return await response.json();
   } catch (error) {
     errorElement.textContent = error.message;
-  //  return { error: error.message };
-  console.log(`API Error: ${error.message}`);
+   // return { error: error.message };
+    console.log(`API Error: ${error.message}`);
 
   }
 }
@@ -48,7 +49,6 @@ endpoints.forEach((endpoint) => {
       // errorElement.textContent = error.message;
        userElement.innerHTML = "No user data available.";
       console.log(`Button Error: ${error.message}`);
-
     }
   });
 });
