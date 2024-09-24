@@ -21,8 +21,8 @@ export const { course } = company;
 
 const user = { name: "John", years: 30 };
 
-export const { name, years, isAdmin = false } = user;
-console.log(name, years, isAdmin);
+export const { name, years: age, isAdmin = false } = user;
+console.log(name, age, isAdmin);
 
 // EXERCISE 3
 // Extract the variables from the dog object and
@@ -34,7 +34,7 @@ const dog = {
   age: 5,
 };
 
-const { name: dogName, breed: dogBreed, age: dogAge } = dog;
+export const { name: dogName, breed: dogBreed, age: dogAge } = dog;
 console.log(dogName, dogBreed, dogAge);
 
 // EXERCISE 4
@@ -47,5 +47,28 @@ const person = {
   firstName: "Alex",
 };
 
-const { lastName: personLastName, ...moreInformation } = person;
+export const { lastName: personLastName, ...moreInformation } = person;
 console.log(personLastName, moreInformation);
+
+
+
+// ====================
+/*
+... (Spread/Rest Operator)
+Was macht der Spread/Rest Operator?
+Spread: Verwendet, um ein Array oder Objekt in seine Einzelteile aufzuspalten.
+Rest: Verwendet, um mehrere Elemente in einem einzigen Parameter oder einer Variablen zu bündeln.
+
+const fruits = ["apple", "banana"];
+const moreFruits = ["cherry", ...fruits]; // Spread-Syntax
+console.log(moreFruits); // ["cherry", "apple", "banana"]
+
+
+?. (Optional Chaining Operator)
+Verhindert, dass ein Fehler auftritt, wenn auf eine tief verschachtelte Eigenschaft zugegriffen wird, die möglicherweise undefined oder null ist.
+
+const user = { profile: { name: "John" } };
+console.log(user.profile?.name); // "John"
+console.log(user.address?.street); // undefined (statt Fehler)
+
+*/
