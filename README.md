@@ -222,3 +222,15 @@
 - `js-error-handling/fetch`
 
 ---
+
+### Day 2: Git Conflicts and Modern JavaScript Syntax
+- Deepened understanding of Git conflicts and resolved them using `git fetch`, `git pull`, `git merge`, and `git rebase`
+- Explored modern JavaScript as a developing language
+- Learned about destructuring assignment for objects and arrays
+
+**Files:**
+- `js-modern-syntax/destructuring-objects`
+- `js-modern-syntax/destructuring-arrays`
+- `js-modern-syntax/rest-and-spread`
+
+---

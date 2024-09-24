@@ -157,3 +157,111 @@ fetchMultipleResources();
 
 // HTML Setup for Error Display (include this in your HTML file)
 // <p id="error-message" class="error"></p>
+
+
+
+/* ========================
+          JS SYNTAX
+   ======================== */
+
+
+// 1. let und const
+// Vor ES6 wurde var verwendet, was zu Problemen mit dem Gültigkeitsbereich führen konnte.
+// let und const bieten eine bessere Kontrolle. let für änderbare Variablen, const für konstante Werte.
+let age = 30; // Wert kann später geändert werden
+const name = 'John'; // Wert kann nicht geändert werden
+
+// 2. Arrow Functions (=>)
+// Arrow Functions bieten eine kürzere und klarere Syntax und übernehmen den this-Kontext
+// aus der umgebenden Funktion oder dem Objekt.
+const add = (a, b) => a + b; // Verkürzte Funktionsschreibweise
+console.log(add(5, 3)); // Gibt 8 aus
+
+// 3. Template Literals (Backticks ``)
+// Mit Template Literals können Strings mit Variablen und mehrzeiligen Texten einfach erstellt werden,
+// ohne String-Konkatenation zu verwenden.
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // "Hello, John!"
+
+// 4. Destructuring Assignment
+// Destructuring erlaubt es, Werte aus Arrays oder Objekten zu extrahieren und sie direkt Variablen zuzuweisen.
+// Es ist eine sehr prägnante Art, Daten zuzugreifen.
+const [x, y] = [10, 20]; // Array Destructuring
+console.log(x, y); // 10 20
+
+const user = { name: 'Bob', age: 25 }; // Objekt Destructuring
+const { name: userName, age: userAge } = user;
+console.log(userName, userAge); // "Bob" 25
+
+// 5. Default Parameters
+// Mit Default-Parametern kannst du Standardwerte für Funktionsparameter festlegen,
+// falls keine Argumente übergeben werden.
+function greet(person = 'Guest') {
+  return `Hello, ${person}!`;
+}
+
+console.log(greet()); // "Hello, Guest!"
+console.log(greet('Alice')); // "Hello, Alice!"
+
+// 6. Rest und Spread Operator
+// Rest Operator sammelt alle übergebenen Argumente in einem Array,
+// während der Spread Operator Array- oder Objektwerte "entpackt".
+function sum(...numbers) { // Rest Operator für unbestimmte Anzahl an Argumenten
+  return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(1, 2, 3, 4)); // 10
+
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5]; // Spread Operator, entpackt arr1 in arr2
+console.log(arr2); // [1, 2, 3, 4, 5]
+
+// 7. Object Literal Enhancements
+// Wenn der Schlüsselname einer Eigenschaft mit dem Variablennamen übereinstimmt,
+// kannst du die Zuweisung kürzer schreiben.
+const city = 'Berlin';
+const country = 'Germany';
+const location = { city, country }; // Kurzschreibweise
+console.log(location); // { city: 'Berlin', country: 'Germany' }
+
+// 8. Promises und async/await
+// Promises bieten eine Möglichkeit, asynchrone Operationen zu handhaben, ohne in tiefe Callback-Nesting-Fallen zu geraten.
+// async/await bietet eine noch sauberere Syntax für den Umgang mit asynchronem Code.
+const fetchData = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve('Data received'), 1000);
+  });
+};
+
+// Mit Promises
+fetchData().then(data => console.log(data)); // "Data received" nach 1 Sekunde
+
+// Mit async/await
+async function getData() {
+  const result = await fetchData();
+  console.log(result); // "Data received"
+}
+getData();
+
+// 9. Modules (Import/Export)
+// Mit der modernen Syntax können Module in Dateien aufgeteilt und exportiert/importiert werden.
+// Beispiel (in einer Datei):
+ export const name = 'Charlie';
+
+// Import in einer anderen Datei (ausgeführt in einem Modul-fähigen Umgebung):
+ import { name } from './file.js';
+
+// 10. Klassen (Classes)
+// Klassen bieten eine einfachere Syntax für die Arbeit mit Konstruktoren und Vererbung.
+// Unter der Haube basiert alles immer noch auf Prototypen.
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    return `Hello, my name is ${this.name}`;
+  }
+}
+
+const person = new Person('John');
+console.log(person.greet()); // "Hello, my name is John"
