@@ -265,3 +265,6 @@ class Person {
 
 const person = new Person('John');
 console.log(person.greet()); // "Hello, my name is John"
+
+
+let something = test(); 
