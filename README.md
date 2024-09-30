@@ -208,7 +208,7 @@
 
 ---
 
-# Week 3 Summary
+# Week 4 Summary
 
 ### Day 1: Asynchronous Code, Promises, and Error Handling
 - Learned how asynchronous code works and how to manage it with Promises and async/await
@@ -234,3 +234,29 @@
 - `js-modern-syntax/rest-and-spread`
 
 ---
+
+### Day 3: Rick and Morty - Recap Project
+- Created a single-page app to browse characters from "Rick and Morty" using a REST API
+- Generated dynamic character cards by fetching data from the API
+- Implemented pagination to display all characters, not just the first 20
+- Added a search bar to filter characters by name
+
+**Files:**
+- `own repository: rick-and-morty-app`
+
+---
+
+
+# Week 5 Summary
+### Day 1: Mock Interview and React Basics
+- Practiced developing a framework for solving coding problems and breaking them down into smaller steps
+- Focused on clear and precise communication during technical interviews
+- Learned the basics of React, including JSX and its differences from HTML
+- Created React components and explored rendering with React
+- Set up a React project using the Vite tool
+
+**Files:**
+- `mock-interview/simple-algorithms`
+- `react-basics/hello-world`
+- `react-basics/hello-world-article`
+- `react-basics/attributes`
