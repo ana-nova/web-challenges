@@ -47,7 +47,7 @@ console.log(student1, student2, student3, student4, student5);
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(...values); // Spread values inside this function call
+export const result = add(...values); // Spread values inside this function call
 
 function add(...values) {
   return values.reduce(
@@ -55,4 +55,3 @@ function add(...values) {
   );
 }
 
-export { result };
