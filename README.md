@@ -260,3 +260,24 @@
 - `react-basics/hello-world`
 - `react-basics/hello-world-article`
 - `react-basics/attributes`
+
+
+--- 
+
+### Day 2: React Props and Component Composition
+- Learned what props are and how to pass them to components
+- Used props in components and rendered content conditionally
+- Explored nesting by creating multiple custom components with a hierarchy
+- Used the `children` prop for rendering JSX from parent components
+- Understood composition as a method for building complex components
+
+**Files:**
+- `react-props/greeting`
+- `react-props/sum`
+- `react-props/smiley`
+- `react-props/button`
+- `react-nesting/buttons-and-children`
+- `react-nesting/fragments`
+- `react-nesting/navigation`
+
+---
