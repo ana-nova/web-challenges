@@ -19,7 +19,7 @@ export default function EntriesSection() {
       </Tabs>
         
         <div className="entries-section__entries">
-          {entries.map((entry) => (
+          {entries.map((entry, index) => (
              <Fragment key={entry.id}>
 
               <Entry
@@ -29,7 +29,9 @@ export default function EntriesSection() {
                 notes={entry.notes}
               />
               
-                <Divider />
+                {/* <Divider /> wird jedes mal angezeigt, auch beim letzten*/}
+                {index < entries.length - 1 ? <Divider/> : null}
+                {/* {index < entries.length - 1 && <Divider/>} alternative Schreibweise, wo der letzte Divider nicht angezeigt wird*/}
              </Fragment> 
           ))}
 
