@@ -10,10 +10,27 @@ export default function App() {
       <Title text="ClientBoard" />
       <div className="app__card-grid">
         {USERS.map((user) => (
-          <Card key={user.id} user={user} />   //um für jeden Nutzer eine Karte zu erstellen mit eindeutigen Key usw
+          <Card key={user.id} user={user} />   //user={user} übergibt alles aus dem array ohne es extra zu tippen
         ))}
       </div>
     </main>
   );
 }
  
+
+/* 
+
+<div className="app__card-grid">
+{USERS.map(( id, name, roles, about) => (
+  <Card key={id} name={name} roles={roles} about={about} />   
+))}
+
+Wieso es nicht gut ist?
+Wir übergeben das gesamte user-Objekt an die Card-Komponente (user={user}), 
+anstatt jede einzelne Eigenschaft separat zu übergeben. 
+Dadurch wird der Code flexibler, weil die Card-Komponente Zugriff auf alle Daten des Benutzers hat.
+Außerdem müssen wir nicht jedes Mal alle Eigenschaften einzeln angeben, 
+wenn wir später etwas ändern oder erweitern wollen. So bleibt der Code übersichtlicher.
+
+
+*/

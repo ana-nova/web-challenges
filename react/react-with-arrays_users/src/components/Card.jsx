@@ -17,3 +17,8 @@ function Card({ user }) {
 }
 
 export default Card;
+
+
+
+// "user" dient hier als prob und greift auf die relevanten Informationen (wie name, roles, about) zu, die aus der App-Komponente kommen 
+
