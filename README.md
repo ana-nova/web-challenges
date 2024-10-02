@@ -281,3 +281,21 @@
 - `react-nesting/navigation`
 
 ---
+
+### Day 3: React State and Rendering Lists
+- Learned how to attach events in React
+- Understood the concept of "state" and managed it using `useState()`
+- Explored the React Lifecycle and how it affects components
+- Used `.map()` to render lists from arrays of objects in JSX
+- Ensured list items have unique keys for efficient rendering
+
+**Files:**
+- `react-state-1/box`
+- `react-state-1/counter`
+- `react-state-1/emoji-checker`
+- `react-state-1/journal-app-favorite-button`
+- `react-with-arrays/fruits`
+- `react-with-arrays/users`
+- `react-with-arrays/journal-app-entries-array`
+
+---
