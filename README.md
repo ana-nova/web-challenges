@@ -299,3 +299,19 @@
 - `react-with-arrays/journal-app-entries-array`
 
 ---
+
+### Day 5: Lifting State Up & self-directed learning
+- Learned to handle form fields using controlled and uncontrolled components
+- Managed form submit events and lifted state up to parent components
+- Passed state and functions via props and understood that state updates are not synchronous
+- Explored hooks in React, focusing on their rules and usage
+- Continued self-directed learning with a focus on React and preparing for interviews
+
+**Files:**
+- `react-state-2/colored-number`
+- `react-state-2/table-reservation`
+- `react-state-2/favourite-holiday`
+- `react-state-2/personal-details`
+
+---
+
