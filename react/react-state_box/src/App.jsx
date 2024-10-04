@@ -27,3 +27,8 @@ export default function App() {
   so it shows the old value.
 
  */
+
+//    useState is the React hook that manages the state.
+//    isActive is the current state.
+//    setActive is the function used to update the state.
+//    false is the initial state, set at the beginning.
