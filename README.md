@@ -331,3 +331,21 @@
 - `react-effects-and-fetch/iss-tracker`
 
 ---
+
+### Day 2: Unit Testing and (local, session) Storage
+- Learned what unit testing is and wrote tests to check function outputs
+- Explored Test Driven Development (TDD) and how to implement it
+- Ran unit tests locally via the command line
+- Understood persistent storage in the browser, differentiating between localStorage and sessionStorage
+- Used `setItem()` and `getItem()` methods, and a library for handling local storage in React apps
+
+**Files:**
+- `js-unit-testing/get-animal`
+- `js-unit-testing/math-functions`
+- `js-unit-testing/people`
+- `react-with-local-storage/stored-note`
+- `react-with-local-storage/journal-app-with-local-storage`
+- `react-with-local-storage/dice`
+
+----
+
