@@ -315,3 +315,19 @@
 
 ---
 
+# Week 6 Summary
+
+### Day 1: React State Management and useEffect Hook
+- Managed arrays and objects in state while avoiding direct state mutation
+- Recognized fetch requests as side effects and used the `useEffect` hook to handle them
+- Understood the callback function, dependency array, and cleanup function of `useEffect`
+- Learned about various side effects and their handling using `useEffect`
+
+**Files:**
+- `react-state-3/adding-animals`
+- `react-state-3/tags`
+- `react-effects-and-fetch/pokemon-api`
+- `react-effects-and-fetch/pokemon-api-with-paging`
+- `react-effects-and-fetch/iss-tracker`
+
+---
