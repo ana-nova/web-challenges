@@ -43,8 +43,8 @@ function App() {
   //"entries" is my key, defaultValue is my initial value
   //useLocalStorageState expects a key and an initial value
   const [entries, setEntries] = useLocalStorageState("entries", { defaultValue: initialEntries });
-  //const [filter, setFilter] = useState("all"); // "all" or "favorites"
-  const [filter, setFilter] = useLocalStorageState("filter", { defaultValue: "all" });
+  const [filter, setFilter] = useState("all"); // "all" or "favorites"
+  //const [filter, setFilter] = useLocalStorageState("filter", { defaultValue: "all" });
 
 
   function handleAddEntry(newEntry) {
