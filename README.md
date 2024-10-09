@@ -349,3 +349,15 @@
 
 ----
 
+### Day 3: Color Theme Creator App – Part 1
+- Created a Color Theme Creator app using the provided template
+- Managed 8 predefined issues using a GitHub board to track progress
+- Solved the following issues:
+  - #1: Display Theme Colors
+  - #2: Add a color to the theme
+  - #3: Delete a color from the theme
+  - #4: Edit a color from the theme
+  - #5: Persist theme in localStorage
+
+**Files:**
+- `own repository: color-theme-creator-app`
