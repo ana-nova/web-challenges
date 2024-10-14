@@ -434,3 +434,16 @@
 - `own repository: color-theme-creator-app`
 
 ---
+
+# Week 7 Summary
+
+### Day 1: Mock Interview and Introduction to Next.js
+
+- Practiced clear communication during technical interviews
+- Explored basic Next.js concepts, including client-side routing, page navigation with `next/link`, and image optimization with `next/image`
+
+**Files:**
+
+- `lotr app`
+
+---
