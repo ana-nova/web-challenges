@@ -444,6 +444,23 @@
 
 **Files:**
 
-- `lotr app`
+- `nextJS/lotr app`
+
+---
+
+### Day 2: Dynamic Paths and Styled Components in Next.js
+
+- Learned the concept of dynamic paths and how to implement them in Next.js
+- Generated links dynamically and used imperative routing
+- Explored the next/head component for managing metadata
+- Worked with styled-components, creating custom components, adapting styles based on props, and using pseudo-elements
+- Applied global styles and integrated Google Fonts with Next.js
+
+**Files:**
+
+- `nextJS/lotr-app-dynamic-routes`
+- `react-styled-components/card-conversion`
+- `react-styled-components/styled-navbar`
+- `react-styled-components/box`
 
 ---
