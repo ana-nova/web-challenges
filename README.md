@@ -464,3 +464,17 @@
 - `react-styled-components/box`
 
 ---
+
+### Day 3: Design Workshop and React Component Testing
+
+- Participated in a UX/UI design workshop, learning what "UI" stands for and the importance of collaboration between designers and developers
+- Learned the basics of component testing in React
+- Rendered React components in tests and simulated interactions
+- Searched for expected elements and formulated test results
+- Gained a general understanding of mocks in testing
+
+**Files:**
+
+- `react-component-testing/scorekeeper`
+
+---
