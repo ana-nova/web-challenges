@@ -478,3 +478,7 @@
 - `react-component-testing/scorekeeper`
 
 ---
+
+### Day 4: Design Workshop & self-directed learning
+
+---
