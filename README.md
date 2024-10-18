@@ -482,3 +482,18 @@
 ### Day 4: Design Workshop & self-directed learning
 
 ---
+
+### Day 5: Prop Drilling, Global State, and Data Fetching with SWR
+
+- Learned about prop drilling and naming conventions in React
+- Explored the concept of global state and its benefits
+- Used the SWR fetching library, understanding the fetcher function, loading/validating state, error state, and fetching on intervals
+- Combined local state with fetched data, utilizing SWR's `mutate()` function
+
+**Files:**
+
+- `react-global-state/lights`
+- `react-data-fetching/iss-tracker`
+- `react-data-fetching/star-wars`
+
+---
