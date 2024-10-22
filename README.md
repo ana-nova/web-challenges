@@ -497,3 +497,33 @@
 - `react-data-fetching/star-wars`
 
 ---
+
+# Week 8 Summary
+
+### Day 1: Art Gallery App Recap Project - Part 1
+
+- Created a list of all art pieces using SWR
+- Implemented a spotlight feature for a highlighted art piece
+- Added separate pages with a navigation bar for easier access
+- Built an Art Piece Details page to display individual piece information
+
+**Files:**
+
+- `own repository: art-gallery-app`
+
+---
+
+### Day 2: Recap Project - Part 2 & Introduction Backend Basics
+
+- Implemented a favorite button and created a Favorite Listing page
+- Learned that JavaScript can be executed outside of the browser
+- Understood that Node.js is a runtime environment for JavaScript
+- Gained a general understanding of servers, backend, frontend, and the request-response mechanism
+
+**Files:**
+
+- `backend-basics/greeting`
+- `backend-basics/routes`
+- `backend-basics/chance`
+
+---
