@@ -527,3 +527,17 @@
 - `backend-basics/chance`
 
 ---
+
+### Day 3: Backend API Routes and MongoDB Basics
+
+- Learned what serverless functions are and the purpose of server-side APIs
+- Implemented static and dynamic Next.js API routes and debugged them using `console.log()`
+- Understood the difference between a database (sql vs. no sql) and a server, and explored relational vs. non-relational databases
+- Gained basic knowledge of MongoDB, including database design, and set up MongoDB Atlas with a cluster and security settings
+
+**Files:**
+
+- `backend-api-routes/products`
+- `backend-api-routes/random-character`
+
+---
