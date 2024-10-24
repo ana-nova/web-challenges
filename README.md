@@ -541,3 +541,16 @@
 - `backend-api-routes/random-character`
 
 ---
+
+### Day 4: MonogDB: Read & self-directed learning
+
+- Understood how to write a Mongoose schema to define the structure of documents
+- Connected a local database to the application using Mongoose
+- Read data from the database using Mongoose models
+- Engaged in self-directed learning for deeper understanding
+
+**Files:**
+
+- `backend-read/products`
+
+---
