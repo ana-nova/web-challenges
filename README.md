@@ -542,15 +542,29 @@
 
 ---
 
-### Day 4: MonogDB: Read & self-directed learning
+### Day 4: MongoDB: Read & self-directed learning
 
 - Understood how to write a Mongoose schema to define the structure of documents
 - Connected a local database to the application using Mongoose
-- Read data from the database using Mongoose models
+- CRUD: Create, Read, Update, Delete
+  - Read data from the database using Mongoose models
 - Engaged in self-directed learning for deeper understanding
 
 **Files:**
 
 - `backend-read/products`
+
+---
+
+### Day 5: Mongo DB: CRUD Operations
+
+- Built a Create REST API route to create new data to the database
+- Learned about the Update and Delete
+- Implemented UPDATE and DELETE API routes for full CRUD functionality
+
+**Files:**
+
+- `backend-create/products`
+- `backend-update-and-delete/products`
 
 ---
