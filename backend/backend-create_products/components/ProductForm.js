@@ -22,7 +22,7 @@ export default function ProductForm() {
       body: JSON.stringify(productData),
     });
 
-    // oder response.ok für alle 200-2099 statuscodes
+    // oder response.ok für alle 200-299 statuscodes
     if (response.status === 201) {
       mutate(); // reloads the data for "/api/products"
       event.target.reset();
