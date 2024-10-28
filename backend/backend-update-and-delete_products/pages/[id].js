@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import StyledLink from "@/components/Link";
 import LiftedForm from "@/components/LiftedForm";
 import { useState } from "react";
+import Comments from "@/components/Comments";
 
 export default function Product() {
   const router = useRouter();
@@ -78,6 +79,7 @@ export default function Product() {
             Price: {data.price} {data.currency}
           </p>
           <StyledLink href="/">Back to all</StyledLink>
+          <Comments reviews={data.reviews} />
         </ProductCard>
       )}
     </>
